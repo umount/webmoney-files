@@ -1,4 +1,5 @@
 require 'rest-client'
+require 'json'
 
 require 'webmoney_files/version'
 require 'webmoney_files/authorize'
@@ -13,6 +14,7 @@ module WebmoneyFiles
         configure.merge(config)
       )
 
+      self
       #WebmoneyFiles::Requests.new(@connection)
     end
 

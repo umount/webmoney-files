@@ -13,7 +13,7 @@ module WebmoneyFiles
         configure.merge(config)
       )
 
-      self
+      #WebmoneyFiles::Requests.new(@connection)
     end
 
     def configure(config={})

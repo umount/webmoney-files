@@ -16,3 +16,6 @@
 *.a
 *.gem
 mkmf.log
+
+config/settings.local.yml
+config/settings/*.local.yml

@@ -1,6 +1,10 @@
 require 'rest-client'
 
 require 'webmoney_files/version'
+require 'webmoney_files/authorize'
+require 'webmoney_files/response'
+require 'webmoney_files/requests/file_request'
+require 'webmoney_files/requests/folder_request'
 
 module WebmoneyFiles
   module ClassMethods

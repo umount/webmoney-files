@@ -16,7 +16,7 @@ class MyWM
 end
 
 RSpec.configure do |config|
-  config.before :each, :webmoney do
+  config.before :all, :webmoney do
     @webmoney ||= MyWM.new(
       wmid: Settings.keeper.wmid,
       password: Settings.keeper.password,

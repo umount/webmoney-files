@@ -15,4 +15,12 @@ describe WebmoneyFiles, :webmoney do
     expect(response).to include('object')
     expect(response['object']).to include('id')
   end
+
+  it 'upload and delete file' do
+    file_path = File.expand_path('../../fixture/webmoney_icon.png', __FILE__)
+    file = storage.file.upload(file_path)
+
+    response = storage.file.delete(file['object']['id'])
+    expect(response).to eq(true)
+  end
 end

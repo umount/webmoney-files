@@ -9,7 +9,7 @@ describe WebmoneyFiles, :webmoney do
   }
 
   it 'upload file by path' do
-    file_path = File.expand_path('../fixture/webmoney_icon.png', __FILE__)
+    file_path = File.expand_path('../../fixture/webmoney_icon.png', __FILE__)
     response = storage.file.upload(file_path)
 
     expect(response).to include('object')
